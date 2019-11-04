@@ -5,7 +5,7 @@ import guru.springframework.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerServiceMap extends AbstractMapService<Owner> implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
         return map.entrySet().stream()
