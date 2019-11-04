@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+        return map.entrySet().stream()
+                .map(entry -> entry.getValue())
+                .filter(owner -> owner.getLastName().equals(lastName))
+                .findFirst()
+                .orElse(null);
     }
 }

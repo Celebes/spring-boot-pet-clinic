@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID> implements CrudService<T, ID> {
-    private final Map<ID, T> map = new HashMap<>();
+    protected final Map<ID, T> map = new HashMap<>();
 
     @Override
     public Set<T> findAll() {
