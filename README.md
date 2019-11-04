@@ -3,10 +3,14 @@ Pet Clinic info: https://speakerdeck.com/michaelisvy/spring-petclinic-sample-app
 
 Based on Udemy course: https://www.udemy.com/course/spring-framework-5-beginner-to-guru
 
-## run using Spring Boot plugin
+## run 
+
+First execute **`mvn clean install -U`** in root directory.
+
+### using Spring Boot plugin
 
 Go to **`/pet-clinic-web`** directory and execute command **`mvn clean spring-boot:run`**
 
-## run manually
+### manually
 
-Execute **`mvn clean install -U`** in root directory and then run **`java -jar .\pet-clinic-web\target\pet-clinic-web-0.0.1-SNAPSHOT.jar`**.
+Go to **`/pet-clinic-web/target`** directory and execute command **`java -jar pet-clinic-web-0.0.1-SNAPSHOT.jar`**.
