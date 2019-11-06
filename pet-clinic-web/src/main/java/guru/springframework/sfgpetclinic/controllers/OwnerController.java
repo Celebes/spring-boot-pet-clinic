@@ -21,4 +21,8 @@ public class OwnerController {
         return "owners/owners";
     }
 
+    @RequestMapping("/find")
+    public String findOwners() {
+        throw new RuntimeException("Not implemented yet!");
+    }
 }
